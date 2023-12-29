@@ -1,0 +1,9 @@
+[site]
+name = "example"
+author = "William Henderson <william-henderson@outlook.com>"
+
+[settings]
+namespace_plugins = false
+
+[dependencies]
+math = "../"

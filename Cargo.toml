@@ -1,0 +1,13 @@
+[package]
+name = "stuart_math"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+stuart_core = { version = "0.2.6", default-features = false }
+mathjax_svg = { git = "https://github.com/w-henderson/mathjax_svg", branch = "inline" }
+
+[lib]
+crate-type = ["cdylib"]
