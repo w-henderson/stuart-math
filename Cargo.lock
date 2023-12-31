@@ -81,8 +81,9 @@ checksum = "c4cd1a83af159aa67994778be9070f0ae1bd732942279cabb14f86f986a21456"
 
 [[package]]
 name = "mathjax_svg"
-version = "3.1.0"
-source = "git+https://github.com/w-henderson/mathjax_svg?branch=inline#ff88daaf737795df0179933d77ab7183a487a003"
+version = "3.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e26441d449e28f5f8fa0d54f1b8f7e39d8bb490687761792bc65d2c7b6927a9"
 dependencies = [
  "anyhow",
  "thiserror",
@@ -145,9 +146,9 @@ dependencies = [
 
 [[package]]
 name = "stuart_core"
-version = "0.2.6"
+version = "0.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2313bddc399948d990520cf88361cbf2701c92bb325968e702124aec235a363c"
+checksum = "a2621c5b4114f0be8badb9217ec104723004686058b89d67ec739b830687f71e"
 dependencies = [
  "humphrey_json",
  "lazy_static",
@@ -156,10 +157,11 @@ dependencies = [
 
 [[package]]
 name = "stuart_math"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "mathjax_svg",
  "stuart_core",
+ "xmltree",
 ]
 
 [[package]]
@@ -325,3 +327,18 @@ name = "windows_x86_64_msvc"
 version = "0.52.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dff9641d1cd4be8d1a070daf9e3773c5f67e78b4d9d42263020c057706765c04"
+
+[[package]]
+name = "xml-rs"
+version = "0.8.19"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0fcb9cbac069e033553e8bb871be2fbdffcab578eb25bd0f7c508cedc6dcd75a"
+
+[[package]]
+name = "xmltree"
+version = "0.10.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d7d8a75eaf6557bb84a65ace8609883db44a29951042ada9b393151532e41fcb"
+dependencies = [
+ "xml-rs",
+]
