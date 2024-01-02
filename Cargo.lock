@@ -82,8 +82,7 @@ checksum = "c4cd1a83af159aa67994778be9070f0ae1bd732942279cabb14f86f986a21456"
 [[package]]
 name = "mathjax_svg"
 version = "3.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1e26441d449e28f5f8fa0d54f1b8f7e39d8bb490687761792bc65d2c7b6927a9"
+source = "git+https://github.com/w-henderson/mathjax_svg?branch=fix/multiple-svgs#39bf98c171491a6b128a79354bde1db7ae97454b"
 dependencies = [
  "anyhow",
  "thiserror",
@@ -157,7 +156,7 @@ dependencies = [
 
 [[package]]
 name = "stuart_math"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "mathjax_svg",
  "stuart_core",
