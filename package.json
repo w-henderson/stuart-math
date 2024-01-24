@@ -1,0 +1,18 @@
+{
+  "name": "stuart-math",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "prepare": "bun build --outfile=out/index.mjs --minify --target=browser src/index.ts",
+    "build": "npm run prepare"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "mathjax-full": "^3.2.2"
+  }
+}
